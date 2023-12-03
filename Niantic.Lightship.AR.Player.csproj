@@ -1,0 +1,1322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{B80FE74D-1AD6-1B79-6F39-12A16BACDC25}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Niantic.Lightship.AR</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\Bin\Debug\Player\</OutputPath>
+    <DefineConstants>UNITY_2022_3_6;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_ANDROID;TEXTCORE_1_0_OR_NEWER;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_ETC_COMPRESSION;PLATFORM_EXTENDS_VULKAN_DEVICE;PLATFORM_HAS_MULTIPLE_SWAPCHAINS;UNITY_ANDROID_SUPPORTS_SHADOWFILES;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;NIANTIC_LIGHTSHIP_AR_LOADER_ENABLED;PROBUILDER_EXPERIMENTAL_FEATURES;MODULE_URP_ENABLED;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Package</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>2.0.18</UnityProjectGeneratorVersion>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityVersion>2022.3.6f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll" />
+    <Analyzer Include="/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/PlatformAdapterManager/PlatformAdapterManager.cs">
+      <Link>Runtime/PlatformAdapterManager/PlatformAdapterManager.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/PlatformAdapterManager/DataSources/StandaloneSubsystemsDataAcquirer.cs">
+      <Link>Runtime/PlatformAdapterManager/DataSources/StandaloneSubsystemsDataAcquirer.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Settings/User/PrivacyData.cs">
+      <Link>Runtime/Settings/User/PrivacyData.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ARFoundation/Overrides/LocationAR/ARLocationManifest.cs">
+      <Link>Runtime/ARFoundation/Overrides/LocationAR/ARLocationManifest.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ScanManagement/ScanArchiveBuilder.cs">
+      <Link>Runtime/ScanManagement/ScanArchiveBuilder.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Loader/Settings/LightshipEnvironmentSettings.cs">
+      <Link>Runtime/Loader/Settings/LightshipEnvironmentSettings.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/NavigationMesh/Internal/NavMeshModel.cs">
+      <Link>Runtime/NavigationMesh/Internal/NavMeshModel.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/AffineMath.cs">
+      <Link>Runtime/Utilities/AffineMath.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/UnityAssets/AssetDatabaseUtilities.cs">
+      <Link>Runtime/Utilities/UnityAssets/AssetDatabaseUtilities.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Input/ImplementationType.cs">
+      <Link>Runtime/Input/ImplementationType.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/VpsCoverage/ResponseStatus.cs">
+      <Link>Runtime/VpsCoverage/ResponseStatus.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Lightship/Input/LightshipInputProvider.cs">
+      <Link>Runtime/Subsystems/Lightship/Input/LightshipInputProvider.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/NavigationMesh/Internal/AgentConfiguration.cs">
+      <Link>Runtime/NavigationMesh/Internal/AgentConfiguration.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/Profiling/IProfiler.cs">
+      <Link>Runtime/Utilities/Profiling/IProfiler.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ARFoundation/Overrides/PersistentAnchors/ARPersistentAnchorStateChangedEventArgs.cs">
+      <Link>Runtime/ARFoundation/Overrides/PersistentAnchors/ARPersistentAnchorStateChangedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Occlusion/Api/NativeApi.cs">
+      <Link>Runtime/Subsystems/Occlusion/Api/NativeApi.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/XR/XRScanning/XRScanningConfiguration.cs">
+      <Link>Runtime/Subsystems/XR/XRScanning/XRScanningConfiguration.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/XR/XRPersistentAnchor/XRPersistentAnchorTrackingStateReason.cs">
+      <Link>Runtime/Subsystems/XR/XRPersistentAnchor/XRPersistentAnchorTrackingStateReason.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/PlatformAdapterManager/DataSources/PlatformDataAcquirer.cs">
+      <Link>Runtime/PlatformAdapterManager/DataSources/PlatformDataAcquirer.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/PlatformAdapterManager/ImageConverter.cs">
+      <Link>Runtime/PlatformAdapterManager/ImageConverter.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ARFoundation/Overrides/LocationAR/Components/TransformFixer.cs">
+      <Link>Runtime/ARFoundation/Overrides/LocationAR/Components/TransformFixer.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ARFoundation/Overrides/Semantics/ARSemanticSegmentationManager.cs">
+      <Link>Runtime/ARFoundation/Overrides/Semantics/ARSemanticSegmentationManager.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/UnityAssets/FileUtilities.cs">
+      <Link>Runtime/Utilities/UnityAssets/FileUtilities.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/VpsCoverage/LocalizationTargetsResponse.cs">
+      <Link>Runtime/VpsCoverage/LocalizationTargetsResponse.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/XR/XRScanning/XRScanningVoxelData.cs">
+      <Link>Runtime/Subsystems/XR/XRScanning/XRScanningVoxelData.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ARFoundation/Overrides/Occlusion/LightshipOcclusionExtension.cs">
+      <Link>Runtime/ARFoundation/Overrides/Occlusion/LightshipOcclusionExtension.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/Textures/BufferedTextureCache.cs">
+      <Link>Runtime/Utilities/Textures/BufferedTextureCache.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/VpsCoverage/AreaTarget.cs">
+      <Link>Runtime/VpsCoverage/AreaTarget.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ARFoundation/Overrides/Common/LightshipARUpdateOrder.cs">
+      <Link>Runtime/ARFoundation/Overrides/Common/LightshipARUpdateOrder.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/NavigationMesh/Internal/GridNode.cs">
+      <Link>Runtime/NavigationMesh/Internal/GridNode.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/Profiling/ProfilerUtility.cs">
+      <Link>Runtime/Utilities/Profiling/ProfilerUtility.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/PersistentAnchor/Api/NativeApi.cs">
+      <Link>Runtime/Subsystems/PersistentAnchor/Api/NativeApi.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Lightship/ISubsystemWithMutableApi.cs">
+      <Link>Runtime/Subsystems/Lightship/ISubsystemWithMutableApi.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/VpsCoverage/LocalizationTarget.cs">
+      <Link>Runtime/VpsCoverage/LocalizationTarget.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/XR/XRPersistentAnchor/XRPersistentAnchorNetworkRequestStatus.cs">
+      <Link>Runtime/Subsystems/XR/XRPersistentAnchor/XRPersistentAnchorNetworkRequestStatus.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/XREnumConversions.cs">
+      <Link>Runtime/Utilities/XREnumConversions.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Loader/Settings/DevicePlaybackSettings.cs">
+      <Link>Runtime/Loader/Settings/DevicePlaybackSettings.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Loader/Settings/OverloadPlaybackSettings.cs">
+      <Link>Runtime/Loader/Settings/OverloadPlaybackSettings.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Loader/PlaybackLoaderHelper.cs">
+      <Link>Runtime/Loader/PlaybackLoaderHelper.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/VpsCoverage/HttpClient.cs">
+      <Link>Runtime/VpsCoverage/HttpClient.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ScanManagement/API/NativeScanArchiveBuilderApi.cs">
+      <Link>Runtime/ScanManagement/API/NativeScanArchiveBuilderApi.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/VpsCoverage/CoverageAreasResult.cs">
+      <Link>Runtime/VpsCoverage/CoverageAreasResult.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/PlatformAdapterManager/API/IApi.cs">
+      <Link>Runtime/PlatformAdapterManager/API/IApi.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/PlatformAdapterManager/CpuTexturesSetter.cs">
+      <Link>Runtime/PlatformAdapterManager/CpuTexturesSetter.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/Profiling/CTraceProfiler.cs">
+      <Link>Runtime/Utilities/Profiling/CTraceProfiler.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/NavigationMesh/LightshipNavMeshRenderer.cs">
+      <Link>Runtime/NavigationMesh/LightshipNavMeshRenderer.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Scanning/LightshipScanningSubsystem.cs">
+      <Link>Runtime/Subsystems/Scanning/LightshipScanningSubsystem.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/VpsCoverage/CoverageAreasRequest.cs">
+      <Link>Runtime/VpsCoverage/CoverageAreasRequest.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ARFoundation/Overrides/Scanning/ARScanningManager.cs">
+      <Link>Runtime/ARFoundation/Overrides/Scanning/ARScanningManager.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/Textures/NativeDataRepository.cs">
+      <Link>Runtime/Utilities/Textures/NativeDataRepository.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Semantics/LightshipSemanticsSubsystem.cs">
+      <Link>Runtime/Subsystems/Semantics/LightshipSemanticsSubsystem.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Plugins/ArCommonMetadata.cs">
+      <Link>Runtime/Plugins/ArCommonMetadata.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/MonoBehaviourEventDispatcher.cs">
+      <Link>Runtime/Utilities/MonoBehaviourEventDispatcher.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ScanManagement/ScanStore.cs">
+      <Link>Runtime/ScanManagement/ScanStore.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Input/Compass.cs">
+      <Link>Runtime/Input/Compass.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ARFoundation/Overrides/Occlusion/LightshipOcclusionExtensionFeature.cs">
+      <Link>Runtime/ARFoundation/Overrides/Occlusion/LightshipOcclusionExtensionFeature.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/PlatformAdapterManager/API/MockApi.cs">
+      <Link>Runtime/PlatformAdapterManager/API/MockApi.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/UnityAssets/ProjectBrowserUtilities.cs">
+      <Link>Runtime/Utilities/UnityAssets/ProjectBrowserUtilities.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Scanning/Api/IApi.cs">
+      <Link>Runtime/Subsystems/Scanning/Api/IApi.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ARFoundation/Overrides/PersistentAnchors/ARPersistentAnchorInterpolator.cs">
+      <Link>Runtime/ARFoundation/Overrides/PersistentAnchors/ARPersistentAnchorInterpolator.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Loader/Settings/LightshipSettings.cs">
+      <Link>Runtime/Loader/Settings/LightshipSettings.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/MatrixUtils.cs">
+      <Link>Runtime/Utilities/MatrixUtils.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Loader/LightshipARCoreLoader.cs">
+      <Link>Runtime/Loader/LightshipARCoreLoader.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Plugins/Scankitpublicprotos.cs">
+      <Link>Runtime/Plugins/Scankitpublicprotos.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/NavigationMesh/LightshipNavMesh.cs">
+      <Link>Runtime/NavigationMesh/LightshipNavMesh.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Playback/LightshipPlaybackSessionSubsystem.cs">
+      <Link>Runtime/Subsystems/Playback/LightshipPlaybackSessionSubsystem.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Settings/User/Metadata.cs">
+      <Link>Runtime/Settings/User/Metadata.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/CoordinateConversions.cs">
+      <Link>Runtime/Utilities/CoordinateConversions.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/NavigationMesh/LightshipNavMeshAgent.cs">
+      <Link>Runtime/NavigationMesh/LightshipNavMeshAgent.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/NativeData.cs">
+      <Link>Runtime/Utilities/NativeData.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/PlatformAdapterManager/FrameCStruct.cs">
+      <Link>Runtime/PlatformAdapterManager/FrameCStruct.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Loader/LightshipARKitLoader.cs">
+      <Link>Runtime/Loader/LightshipARKitLoader.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/PlatformAdapterManager/AbstractTexturesSetter.cs">
+      <Link>Runtime/PlatformAdapterManager/AbstractTexturesSetter.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Telemetry/ITelemetryPublisher.cs">
+      <Link>Runtime/Telemetry/ITelemetryPublisher.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/NavigationMesh/Internal/Waypoint.cs">
+      <Link>Runtime/NavigationMesh/Internal/Waypoint.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Loader/ILightshipLoader.cs">
+      <Link>Runtime/Loader/ILightshipLoader.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/PlatformAdapterManager/API/NativeApi.cs">
+      <Link>Runtime/PlatformAdapterManager/API/NativeApi.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/PackageInfo.cs">
+      <Link>Runtime/PackageInfo.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Playback/LightshipPlaybackInputProvider.cs">
+      <Link>Runtime/Subsystems/Playback/LightshipPlaybackInputProvider.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ARFoundation/Overrides/PersistentAnchors/ARLocationTrackedEventArgs.cs">
+      <Link>Runtime/ARFoundation/Overrides/PersistentAnchors/ARLocationTrackedEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Common/CpuImage/LightshipCpuBuffer.cs">
+      <Link>Runtime/Subsystems/Common/CpuImage/LightshipCpuBuffer.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/Preloading/NativeModelPreloader.cs">
+      <Link>Runtime/Utilities/Preloading/NativeModelPreloader.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Lightship/ILightshipSettingsUser.cs">
+      <Link>Runtime/Subsystems/Lightship/ILightshipSettingsUser.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/VpsCoverage/CoverageClientManager.cs">
+      <Link>Runtime/VpsCoverage/CoverageClientManager.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/Matrix4x4Extensions.cs">
+      <Link>Runtime/Utilities/Matrix4x4Extensions.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/XR/XRScanning/XRScanningSubsystem.cs">
+      <Link>Runtime/Subsystems/XR/XRScanning/XRScanningSubsystem.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/PlatformAdapterManager/DataSources/MockDataAcquirer.cs">
+      <Link>Runtime/PlatformAdapterManager/DataSources/MockDataAcquirer.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/TextureFormatExtensions.cs">
+      <Link>Runtime/Utilities/TextureFormatExtensions.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ARFoundation/Overrides/Semantics/ARSemanticSegmentationFrameEventArgs.cs">
+      <Link>Runtime/ARFoundation/Overrides/Semantics/ARSemanticSegmentationFrameEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ARFoundation/Overrides/PersistentAnchors/ARPersistentAnchorManager.cs">
+      <Link>Runtime/ARFoundation/Overrides/PersistentAnchors/ARPersistentAnchorManager.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/XR/XRPersistentAnchor/XRPersistentAnchor.cs">
+      <Link>Runtime/Subsystems/XR/XRPersistentAnchor/XRPersistentAnchor.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Settings/User/LegacyMetadataHelper.cs">
+      <Link>Runtime/Settings/User/LegacyMetadataHelper.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/VpsCoverage/CoverageArea.cs">
+      <Link>Runtime/VpsCoverage/CoverageArea.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Plugins/ArdkNextTelemetry.cs">
+      <Link>Runtime/Plugins/ArdkNextTelemetry.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Telemetry/TelemetryHelper.cs">
+      <Link>Runtime/Telemetry/TelemetryHelper.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/VpsCoverage/CoverageAreasResponse.cs">
+      <Link>Runtime/VpsCoverage/CoverageAreasResponse.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/XR/XRSemanticsSubsystem/XRSemanticsSubsystem.cs">
+      <Link>Runtime/Subsystems/XR/XRSemanticsSubsystem/XRSemanticsSubsystem.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ScanManagement/ScanPaths.cs">
+      <Link>Runtime/ScanManagement/ScanPaths.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/XR/XRPersistentAnchor/XRPersistentAnchorSubsystemDescriptor.cs">
+      <Link>Runtime/Subsystems/XR/XRPersistentAnchor/XRPersistentAnchorSubsystemDescriptor.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/NavigationMesh/Internal/PathFindingBehaviour.cs">
+      <Link>Runtime/NavigationMesh/Internal/PathFindingBehaviour.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Scanning/Api/RecordingStatus.cs">
+      <Link>Runtime/Subsystems/Scanning/Api/RecordingStatus.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ARFoundation/Overrides/PersistentAnchors/ARPersistentAnchorPayload.cs">
+      <Link>Runtime/ARFoundation/Overrides/PersistentAnchors/ARPersistentAnchorPayload.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/Metrics/MetricsUtility.cs">
+      <Link>Runtime/Utilities/Metrics/MetricsUtility.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Loader/Settings/EditorPlaybackSettings.cs">
+      <Link>Runtime/Loader/Settings/EditorPlaybackSettings.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Lightship/NativeHandleValidation.cs">
+      <Link>Runtime/Subsystems/Lightship/NativeHandleValidation.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ARFoundation/Overrides/PersistentAnchors/MockARPersistentAnchorManagerImplementation.cs">
+      <Link>Runtime/ARFoundation/Overrides/PersistentAnchors/MockARPersistentAnchorManagerImplementation.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Playback/IPlaybackDatasetUser.cs">
+      <Link>Runtime/Subsystems/Playback/IPlaybackDatasetUser.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Playback/LightshipPlaybackCameraSubsystem.cs">
+      <Link>Runtime/Subsystems/Playback/LightshipPlaybackCameraSubsystem.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Semantics/Api/MockApi.cs">
+      <Link>Runtime/Subsystems/Semantics/Api/MockApi.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/VpsCoverage/ResponseStatusTranslator.cs">
+      <Link>Runtime/VpsCoverage/ResponseStatusTranslator.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/XR/XRPersistentAnchor/XRPersistentAnchorLocalizationStatus.cs">
+      <Link>Runtime/Subsystems/XR/XRPersistentAnchor/XRPersistentAnchorLocalizationStatus.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Telemetry/AnalyticsTelemetryPublisher.cs">
+      <Link>Runtime/Telemetry/AnalyticsTelemetryPublisher.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Plugins/ArClientEnvelope.cs">
+      <Link>Runtime/Plugins/ArClientEnvelope.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Meshing/LightshipMeshingProvider.cs">
+      <Link>Runtime/Subsystems/Meshing/LightshipMeshingProvider.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/Attributes/ReadOnlyDrawer.cs">
+      <Link>Runtime/Utilities/Attributes/ReadOnlyDrawer.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ScanManagement/API/IScanArchiveBuilderApi.cs">
+      <Link>Runtime/ScanManagement/API/IScanArchiveBuilderApi.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Playback/LightshipPlaybackOcclusionSubsystem.cs">
+      <Link>Runtime/Subsystems/Playback/LightshipPlaybackOcclusionSubsystem.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ARFoundation/Overrides/PersistentAnchors/ARPersistentAnchor.cs">
+      <Link>Runtime/ARFoundation/Overrides/PersistentAnchors/ARPersistentAnchor.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ARFoundation/Overrides/PersistentAnchors/ARPersistentAnchorManagerImplementation.cs">
+      <Link>Runtime/ARFoundation/Overrides/PersistentAnchors/ARPersistentAnchorManagerImplementation.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/CameraMath.cs">
+      <Link>Runtime/Utilities/CameraMath.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Playback/ScreenOrientationFromPose.cs">
+      <Link>Runtime/Subsystems/Playback/ScreenOrientationFromPose.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/ImageSamplingUtils.cs">
+      <Link>Runtime/Utilities/ImageSamplingUtils.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/VpsCoverage/CoverageClient.cs">
+      <Link>Runtime/VpsCoverage/CoverageClient.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/Attributes/PublicAPIAttribute.cs">
+      <Link>Runtime/Utilities/Attributes/PublicAPIAttribute.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Loader/LightshipStandaloneLoader.cs">
+      <Link>Runtime/Loader/LightshipStandaloneLoader.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ARFoundation/Overrides/Semantics/ARSemanticSegmentationModelEventArgs.cs">
+      <Link>Runtime/ARFoundation/Overrides/Semantics/ARSemanticSegmentationModelEventArgs.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/Profiling/MockProfiler.cs">
+      <Link>Runtime/Utilities/Profiling/MockProfiler.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ScanManagement/ARScanQualityClassifier.cs">
+      <Link>Runtime/ScanManagement/ARScanQualityClassifier.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/XR/XRScanning/XRScanningSubsystemDescriptor.cs">
+      <Link>Runtime/Subsystems/XR/XRScanning/XRScanningSubsystemDescriptor.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/Profiling/UnityProfiler.cs">
+      <Link>Runtime/Utilities/Profiling/UnityProfiler.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ARFoundation/Overrides/LocationAR/Components/MockCamera.cs">
+      <Link>Runtime/ARFoundation/Overrides/LocationAR/Components/MockCamera.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/NavigationMesh/Internal/PathFinding.cs">
+      <Link>Runtime/NavigationMesh/Internal/PathFinding.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Plugins/titanPoiManagement.cs">
+      <Link>Runtime/Plugins/titanPoiManagement.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/Metrics/FPSMetricsUtility.cs">
+      <Link>Runtime/Utilities/Metrics/FPSMetricsUtility.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/VpsCoverage/LatLng.cs">
+      <Link>Runtime/VpsCoverage/LatLng.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ARFoundation/Overrides/PersistentAnchors/ARPersistentAnchorTelemetrySidecar.cs">
+      <Link>Runtime/ARFoundation/Overrides/PersistentAnchors/ARPersistentAnchorTelemetrySidecar.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Loader/NativeLoaderHelper.cs">
+      <Link>Runtime/Loader/NativeLoaderHelper.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/Preloading/ModelPreloaderFactory.cs">
+      <Link>Runtime/Utilities/Preloading/ModelPreloaderFactory.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Core/LightshipUnityContext.cs">
+      <Link>Runtime/Core/LightshipUnityContext.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/GameViewUtils.cs">
+      <Link>Runtime/Utilities/GameViewUtils.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ARFoundation/Overrides/LocationAR/ARLocationManager.cs">
+      <Link>Runtime/ARFoundation/Overrides/LocationAR/ARLocationManager.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/PersistentAnchor/Api/IApi.cs">
+      <Link>Runtime/Subsystems/PersistentAnchor/Api/IApi.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Common/CpuImage/LightshipCpuImageApi.cs">
+      <Link>Runtime/Subsystems/Common/CpuImage/LightshipCpuImageApi.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/AssemblyInfo.cs">
+      <Link>Runtime/AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/PersistentAnchor/Api/MockApi.cs">
+      <Link>Runtime/Subsystems/PersistentAnchor/Api/MockApi.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Occlusion/Api/IApi.cs">
+      <Link>Runtime/Subsystems/Occlusion/Api/IApi.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/Device/FileTracker.cs">
+      <Link>Runtime/Utilities/Device/FileTracker.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/VpsCoverage/CoverageClientFactory.cs">
+      <Link>Runtime/VpsCoverage/CoverageClientFactory.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/Logging/Log.cs">
+      <Link>Runtime/Utilities/Logging/Log.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Playback/PlaybackDataset.cs">
+      <Link>Runtime/Subsystems/Playback/PlaybackDataset.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/XR/XRScanning/XRScanningState.cs">
+      <Link>Runtime/Subsystems/XR/XRScanning/XRScanningState.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/NavigationMesh/Internal/Surface.cs">
+      <Link>Runtime/NavigationMesh/Internal/Surface.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ARFoundation/Overrides/Occlusion/OcclusionContext.cs">
+      <Link>Runtime/ARFoundation/Overrides/Occlusion/OcclusionContext.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/NavigationMesh/Internal/Bounds.cs">
+      <Link>Runtime/NavigationMesh/Internal/Bounds.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/MatrixConversionHelper.cs">
+      <Link>Runtime/Utilities/MatrixConversionHelper.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Semantics/Api/NativeApi.cs">
+      <Link>Runtime/Subsystems/Semantics/Api/NativeApi.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/VpsCoverage/LocalizationTargetsRequest.cs">
+      <Link>Runtime/VpsCoverage/LocalizationTargetsRequest.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/PlatformAdapterManager/GpuTexturesSetter.cs">
+      <Link>Runtime/PlatformAdapterManager/GpuTexturesSetter.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/XR/XRSemanticsSubsystem/XRSemanticsSubsystemDescriptor.cs">
+      <Link>Runtime/Subsystems/XR/XRSemanticsSubsystem/XRSemanticsSubsystemDescriptor.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/NavigationMesh/Internal/PathFindingNode.cs">
+      <Link>Runtime/NavigationMesh/Internal/PathFindingNode.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ScanManagement/API/MockSqcApi.cs">
+      <Link>Runtime/ScanManagement/API/MockSqcApi.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Loader/Settings/ILightshipPlaybackSettings.cs">
+      <Link>Runtime/Loader/Settings/ILightshipPlaybackSettings.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/XR/XRPersistentAnchor/XRPersistentAnchorSubsystem.cs">
+      <Link>Runtime/Subsystems/XR/XRPersistentAnchor/XRPersistentAnchorSubsystem.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Lightship/PoseProvider.cs">
+      <Link>Runtime/Subsystems/Lightship/PoseProvider.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/NavigationMesh/Internal/Quad.cs">
+      <Link>Runtime/NavigationMesh/Internal/Quad.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Scanning/Api/MockApi.cs">
+      <Link>Runtime/Subsystems/Scanning/Api/MockApi.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Semantics/Api/IApi.cs">
+      <Link>Runtime/Subsystems/Semantics/Api/IApi.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ARFoundation/Unity/ARTextureInfo.cs">
+      <Link>Runtime/ARFoundation/Unity/ARTextureInfo.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Plugins/common.cs">
+      <Link>Runtime/Plugins/common.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/Textures/ExternalTextureUtils.cs">
+      <Link>Runtime/Utilities/Textures/ExternalTextureUtils.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/Preloading/Feature.cs">
+      <Link>Runtime/Utilities/Preloading/Feature.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/NavigationMesh/Internal/ModelSettings.cs">
+      <Link>Runtime/NavigationMesh/Internal/ModelSettings.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/PlatformAdapterManager/DataFormat.cs">
+      <Link>Runtime/PlatformAdapterManager/DataFormat.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ARFoundation/Overrides/Occlusion/LightshipFusedDepthCamera.cs">
+      <Link>Runtime/ARFoundation/Overrides/Occlusion/LightshipFusedDepthCamera.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/NavigationMesh/Internal/Path.cs">
+      <Link>Runtime/NavigationMesh/Internal/Path.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Input/Input.cs">
+      <Link>Runtime/Input/Input.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/PlatformAdapterManager/FrameData.cs">
+      <Link>Runtime/PlatformAdapterManager/FrameData.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/PlatformAdapterManager/DataFormatConstants.cs">
+      <Link>Runtime/PlatformAdapterManager/DataFormatConstants.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Loader/LightshipLoaderUtilities.cs">
+      <Link>Runtime/Loader/LightshipLoaderUtilities.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/PlatformAdapterManager/DataSources/SubsystemsDataAcquirer.cs">
+      <Link>Runtime/PlatformAdapterManager/DataSources/SubsystemsDataAcquirer.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/VpsCoverage/LocalizationTargetsResult.cs">
+      <Link>Runtime/VpsCoverage/LocalizationTargetsResult.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/Attributes/ReadOnlyAttribute.cs">
+      <Link>Runtime/Utilities/Attributes/ReadOnlyAttribute.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/PersistentAnchor/LightshipPersistentAnchorSubsystem.cs">
+      <Link>Runtime/Subsystems/PersistentAnchor/LightshipPersistentAnchorSubsystem.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ARFoundation/Overrides/PersistentAnchors/IARPersistentAnchorManagerImplementation.cs">
+      <Link>Runtime/ARFoundation/Overrides/PersistentAnchors/IARPersistentAnchorManagerImplementation.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/NavigationMesh/LightshipNavMeshManager.cs">
+      <Link>Runtime/NavigationMesh/LightshipNavMeshManager.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/XR/XRPersistentAnchor/XRPersistentAnchorPayload.cs">
+      <Link>Runtime/Subsystems/XR/XRPersistentAnchor/XRPersistentAnchorPayload.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/CollectionExtensions.cs">
+      <Link>Runtime/Utilities/CollectionExtensions.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Input/LocationService.cs">
+      <Link>Runtime/Input/LocationService.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/SpacesCameraImageHack.cs">
+      <Link>Runtime/Utilities/SpacesCameraImageHack.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ScanManagement/API/NativeSqcApi.cs">
+      <Link>Runtime/ScanManagement/API/NativeSqcApi.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Playback/PlaybackDatasetLoader.cs">
+      <Link>Runtime/Subsystems/Playback/PlaybackDatasetLoader.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ScanManagement/API/ISqcApi.cs">
+      <Link>Runtime/ScanManagement/API/ISqcApi.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/Preloading/IModelPreloader.cs">
+      <Link>Runtime/Utilities/Preloading/IModelPreloader.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ARFoundation/Overrides/LocationAR/ARLocation.cs">
+      <Link>Runtime/ARFoundation/Overrides/LocationAR/ARLocation.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Core/LightshipPlugin.cs">
+      <Link>Runtime/Core/LightshipPlugin.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Telemetry/TelemetryService.cs">
+      <Link>Runtime/Telemetry/TelemetryService.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/Textures/SizedBufferedTextureCache.cs">
+      <Link>Runtime/Utilities/Textures/SizedBufferedTextureCache.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/NavigationMesh/Internal/SpatialTree.cs">
+      <Link>Runtime/NavigationMesh/Internal/SpatialTree.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Playback/PlaybackDatasetReader.cs">
+      <Link>Runtime/Subsystems/Playback/PlaybackDatasetReader.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/NavigationMesh/Internal/Utils.cs">
+      <Link>Runtime/NavigationMesh/Internal/Utils.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/NavigationMesh/LightshipNavMeshAgentPathRenderer.cs">
+      <Link>Runtime/NavigationMesh/LightshipNavMeshAgentPathRenderer.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/URPMaterialSetter.cs">
+      <Link>Runtime/Utilities/URPMaterialSetter.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Scanning/Api/NativeApi.cs">
+      <Link>Runtime/Subsystems/Scanning/Api/NativeApi.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/Trackables/TrackableIdExtension.cs">
+      <Link>Runtime/Utilities/Trackables/TrackableIdExtension.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ARFoundation/Overrides/Meshing/LightshipMeshingExtension.cs">
+      <Link>Runtime/ARFoundation/Overrides/Meshing/LightshipMeshingExtension.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Subsystems/Occlusion/LightshipOcclusionSubsystem.cs">
+      <Link>Runtime/Subsystems/Occlusion/LightshipOcclusionSubsystem.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/VpsCoverage/AreaTargetsResult.cs">
+      <Link>Runtime/VpsCoverage/AreaTargetsResult.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/ScanManagement/IARScanQualityClassifier.cs">
+      <Link>Runtime/ScanManagement/IARScanQualityClassifier.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Loader/LightshipLoaderConstants.cs">
+      <Link>Runtime/Loader/LightshipLoaderConstants.cs</Link>
+    </Compile>
+    <Compile Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Utilities/ImageHackDisplay.cs">
+      <Link>Runtime/Utilities/ImageHackDisplay.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Plugins/Windows/x86_64/LightshipARDK.dll">
+      <Link>Runtime/Plugins/Windows/x86_64/LightshipARDK.dll</Link>
+    </None>
+    <None Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Telemetry/dep/Niantic.Platform.Analytics.NATelemetry.4.5.0/Niantic.Platform.Analytics.NATelemetry.dll">
+      <Link>Runtime/Telemetry/dep/Niantic.Platform.Analytics.NATelemetry.4.5.0/Niantic.Platform.Analytics.NATelemetry.dll</Link>
+    </None>
+    <None Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Telemetry/dep/Niantic.Google.Protobuf.3.0.0/Niantic.Google.Protobuf.dll">
+      <Link>Runtime/Telemetry/dep/Niantic.Google.Protobuf.3.0.0/Niantic.Google.Protobuf.dll</Link>
+    </None>
+    <None Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Niantic.Lightship.AR.asmdef">
+      <Link>Runtime/Niantic.Lightship.AR.asmdef</Link>
+    </None>
+    <None Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Telemetry/dep/Niantic.Google.Protobuf.3.0.0/Google.Protobuf.xml">
+      <Link>Runtime/Telemetry/dep/Niantic.Google.Protobuf.3.0.0/Google.Protobuf.xml</Link>
+    </None>
+    <None Include="/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Telemetry/dep/Niantic.Platform.Analytics.NATelemetry.4.5.0/Niantic.Platform.Analytics.NATelemetry.xml">
+      <Link>Runtime/Telemetry/dep/Niantic.Platform.Analytics.NATelemetry.4.5.0/Niantic.Platform.Analytics.NATelemetry.xml</Link>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ContentLoadModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.ContentLoadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PropertiesModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.PropertiesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsCommonModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/PlaybackEngines/AndroidPlayer/Variations/il2cpp/Managed/UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Niantic.Platform.Analytics.NATelemetry">
+      <HintPath>/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Telemetry/dep/Niantic.Platform.Analytics.NATelemetry.4.5.0/Niantic.Platform.Analytics.NATelemetry.dll</HintPath>
+    </Reference>
+    <Reference Include="Niantic.Google.Protobuf">
+      <HintPath>/Users/gavinprior/Desktop/ardk-upm-main/Runtime/Telemetry/dep/Niantic.Google.Protobuf.3.0.0/Niantic.Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library/PackageCache/com.unity.nuget.newtonsoft-json@3.2.1/Runtime/AOT/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/ref/2.1.0/netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Diagnostics.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.DispatchProxy">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.DispatchProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.ILGeneration">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.ILGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.Lightweight">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Emit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netstandard/System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.ServiceModel.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Serialization">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/System.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>/Users/gavinprior/Documents/Unity/2022.3.6f1/Unity.app/Contents/NetStandard/compat/2.1.0/shims/netfx/mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARSubsystems">
+      <HintPath>Library/ScriptAssemblies/Unity.XR.ARSubsystems.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Management">
+      <HintPath>Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.CoreUtils">
+      <HintPath>Library/ScriptAssemblies/Unity.XR.CoreUtils.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARFoundation">
+      <HintPath>Library/ScriptAssemblies/Unity.XR.ARFoundation.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARCore">
+      <HintPath>Library/ScriptAssemblies/Unity.XR.ARCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.InputSystem">
+      <HintPath>Library/ScriptAssemblies/Unity.InputSystem.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Unity.RenderPipelines.Universal.Runtime.Player.csproj">
+      <Project>{7198BFF3-3701-EA89-D1A8-ACFEE785109E}</Project>
+      <Name>Unity.RenderPipelines.Universal.Runtime.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.RenderPipelines.Core.Runtime.Player.csproj">
+      <Project>{484949D3-1D2A-7F4A-6801-70DAA3EBA820}</Project>
+      <Name>Unity.RenderPipelines.Core.Runtime.Player</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.Player.csproj">
+      <Project>{DA986904-FD99-F2FB-99E4-75970AD95AB8}</Project>
+      <Name>UnityEngine.UI.Player</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
