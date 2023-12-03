@@ -3,7 +3,7 @@
 
 To Do:
 
-*'How To' on starting app
+* 'How To' on starting app
 * Link between map to VPS
 * Show only my VPS
 * 'Hint' popups when close to find the VPS
