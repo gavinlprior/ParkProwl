@@ -2,6 +2,7 @@
  Augmented reality Demo app using Niantic Lightship 3.1 and maps
 
 To Do:
+
 *'How To' on starting app
 * Link between map to VPS
 * Show only my VPS
